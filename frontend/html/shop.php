@@ -66,7 +66,7 @@ if ($loggedin === true) {
 			// No matter which type, we will always log it.
 			mysql_insert("INSERT INTO `znote_shop_logs` (`account_id`, `player_id`, `type`, `itemid`, `count`, `points`, `time`) VALUES ('$cid', '0', '". $buy['type'] ."', '". $buy['itemid'] ."', '". $buy['count'] ."', '". $buy['points'] ."', '$time')");
 			
-		} else echo '<font color="red" size="4">You need more points, this offer cost '.$buy['points'].' points.</font>';
+		} else echo '<font color="red" size="4">You need more points, this offer cost '.$buy['points'].' points. You have '.$user_znote_data['points'].' points</font>';
 		//var_dump($buy);
 		//echo '<font color="red" size="4">'. $_POST['buy'] .'</font>';
 	}
