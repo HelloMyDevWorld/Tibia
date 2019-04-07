@@ -20,3 +20,10 @@ There is an account management system (ZNote AAC), refer to the ZNote repo to fi
 
 Things starting...
 ![](https://raw.githubusercontent.com/lucascebertin/otserv-automation/master/assets/gif/starting.gif)
+
+
+Information: 
+
+config.lua IP to 127.0.0.1 or your ip !
+unwrap volumen/world/map otbm !
+change to Linux UF EOL -> C:\Users\Dex\Desktop\Tibia\TibiaDocker\server  wait-for.sh

@@ -67,7 +67,6 @@ CREATE TABLE IF NOT EXISTS `accounts` (
 --
 
 INSERT INTO `accounts` (`id`, `name`, `password`, `secret`, `type`, `premdays`, `coins`, `lastday`, `email`, `creation`, `vote`, `key`, `email_new`, `email_new_time`, `rlname`, `location`, `page_access`, `email_code`, `next_email`, `premium_points`, `create_date`, `create_ip`, `last_post`, `flag`, `vip_time`, `guild_points`, `guild_points_stats`) VALUES
-(1, '1', '060d38973b4ba4051fa6ca22f9acd4be7d1557fe', NULL, 1, 0, 0, 0, '', 0, 0, '0', '', 0, '', '', 9999, '', 0, 0, 0, 0, 0, 'unknown', 0, 0, 0),
 (8, 'god', '21298df8a3277357ee55b01df9530b535cf08ec1', NULL, 5, 0, 0, 0, 'mitsuig@xtibia.com', 1465696163, 0, '', '', 0, '', '', 9999, '', 0, 639, 0, 0, 1467772450, '', 0, 0, 0);
 
 -- --------------------------------------------------------
@@ -1623,11 +1622,6 @@ CREATE TABLE IF NOT EXISTS `players` (
 --
 
 INSERT INTO `players` (`id`, `name`, `group_id`, `account_id`, `level`, `vocation`, `health`, `healthmax`, `experience`, `lookbody`, `lookfeet`, `lookhead`, `looklegs`, `looktype`, `lookaddons`, `maglevel`, `mana`, `manamax`, `manaspent`, `soul`, `town_id`, `posx`, `posy`, `posz`, `conditions`, `cap`, `sex`, `lastlogin`, `lastip`, `save`, `skull`, `skulltime`, `lastlogout`, `blessings`, `onlinetime`, `deletion`, `balance`, `offlinetraining_time`, `offlinetraining_skill`, `stamina`, `skill_fist`, `skill_fist_tries`, `skill_club`, `skill_club_tries`, `skill_sword`, `skill_sword_tries`, `skill_axe`, `skill_axe_tries`, `skill_dist`, `skill_dist_tries`, `skill_shielding`, `skill_shielding_tries`, `skill_fishing`, `skill_fishing_tries`, `deleted`, `description`, `comment`, `create_ip`, `create_date`, `hide_char`, `cast`, `skill_critical_hit_chance_tries`, `skill_critical_hit_damage`, `skill_critical_hit_damage_tries`, `skill_life_leech_chance`, `skill_life_leech_chance_tries`, `skill_life_leech_amount`, `skill_life_leech_amount_tries`, `skill_mana_leech_chance`, `skill_mana_leech_chance_tries`, `skill_mana_leech_amount`, `skill_mana_leech_amount_tries`, `skill_criticalhit_chance_tries`, `skill_criticalhit_damage`, `skill_criticalhit_damage_tries`, `skill_criticalhit_chance`, `skill_lifeleech_chance`, `skill_manaleech_chance`, `skill_lifeleech_amount`, `skill_manaleech_amount`, `marriage_status`, `skill_critical_hit_chance`) VALUES
-(1, 'Nadega Sample', 1, 1, 8, 0, 180, 180, 4200, 0, 95, 78, 115, 128, 0, 0, 35, 35, 0, 0, 2, 32104, 32191, 6, '', 400, 0, 1407021967, 1793873073, 1, 0, 0, 1407021968, 0, 203, 0, 0, 43200, -1, 2520, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 0, '', '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
-(2, 'Sorcerer Sample', 1, 1, 8, 1, 180, 180, 4200, 0, 95, 78, 115, 128, 0, 0, 35, 35, 0, 100, 2, 32104, 32191, 6, '', 400, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 43200, -1, 2520, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 0, '', '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
-(3, 'Druid Sample', 1, 1, 8, 2, 180, 180, 4200, 0, 95, 78, 115, 128, 0, 0, 35, 35, 0, 100, 2, 32104, 32191, 6, 0x010004000002ffffffff0360ea00001a001b00000000fe, 400, 0, 1407021516, 255183537, 1, 0, 0, 1407021548, 0, 32, 0, 0, 43200, -1, 2520, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 0, '', '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
-(4, 'Paladin Sample', 1, 1, 8, 3, 180, 180, 4200, 0, 95, 78, 115, 128, 0, 0, 35, 35, 0, 100, 2, 32104, 32191, 6, '', 400, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 43200, -1, 2520, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 0, '', '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
-(5, 'Knight Sample', 1, 1, 8, 4, 180, 180, 4200, 0, 95, 78, 115, 128, 0, 0, 35, 35, 0, 100, 2, 32104, 32191, 6, '', 400, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 43200, -1, 2520, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 0, '', '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
 (13, 'God', 3, 8, 1, 0, 180, 180, 0, 124, 78, 0, 124, 746, 3, 50000, 35, 35, 0, 0, 2, 32347, 32226, 7, '', 400, 1, 1500411618, 16777343, 1, 0, 0, 1500411708, 63, 75982, 0, 1005276, 43200, -1, 2520, 49, 0, 49, 0, 49, 0, 10, 0, 50, 0, 10, 0, 10, 0, 0, '', '', 0, 1465696208, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 
 -- --------------------------------------------------------
@@ -12750,8 +12744,7 @@ CREATE TABLE IF NOT EXISTS `znote_accounts` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB;
 
-INSERT INTO `znote_accounts` (`account_id`, `ip`, `created`, `flag`) VALUES
-('1', '0', '01-01-2018 00:00:00', '');
+INSERT INTO `znote_accounts` (`account_id`, `ip`, `created`, `flag`) VALUES ('1', '0', '01-01-2018 00:00:00', '');
 
 CREATE TABLE IF NOT EXISTS `znote_news` (
   `id` int(11) NOT NULL AUTO_INCREMENT,

@@ -625,8 +625,7 @@
 
 	// WARNING! Account names written here will have admin access to web page!
 	$config['page_admin_access'] = array(
-		'firstaccountName',
-		'secondaccountName',
+		'god'
 	);
 
 	// Built-in FORUM
