@@ -940,7 +940,7 @@
 			'itemid' => 2392,
 			'count' => 1,
 			'description' => "Fire sword",
-			'points' => 10,
+			'points' => 0,
 		),
 		3 => array(
 			'type' => 2,
