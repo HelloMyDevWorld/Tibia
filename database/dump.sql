@@ -12776,6 +12776,9 @@ CREATE TABLE IF NOT EXISTS `znote_paypal` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB;
 
+INSERT INTO `znote_paypal` (`txn_id`, `email`, `accid`, `price`, `points`) VALUES
+('1', 'patsadow2@gmail.com', '8', '10', '100');
+
 CREATE TABLE IF NOT EXISTS `znote_paygol` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `account_id` int(11) NOT NULL,

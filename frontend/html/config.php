@@ -852,7 +852,7 @@
 	/////////////////
 	// Write your pagseguro address here, and what currency you want to recieve money in.
 	$config['pagseguro'] = array(
-		'enabled' => true,
+		'enabled' => false,
 		'sandbox' => false,
 		'email' => '', // Example: pagseguro@mail.com
 		'token' => '',
@@ -880,7 +880,7 @@
 	// You can configure paygol to send each month, then they will send money
 	// to you 1 month after recieving 50+ eur.
 	$config['paygol'] = array(
-		'enabled' => true,
+		'enabled' => false,
 		'serviceID' => 86648, // Service ID from paygol.com
 		'secretKey' => 'xxxx-xxxx-xxxx-xxxx', // Secret key from paygol.com. Never share your secret key
 		'currency' => 'SEK',
