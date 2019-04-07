@@ -56,6 +56,7 @@
 	<talkaction words="!online" script="online.lua" />
 	<talkaction words="!serverinfo" script="serverinfo.lua" />
 	<talkaction words="!addon" script="addon.lua" />
+	<talkaction words="!shop" script="znoteshop.lua"/>
 
 	<!-- test talkactions -->
 	<talkaction words="!z" separator=" " script="magiceffect.lua" />

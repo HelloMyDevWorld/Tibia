@@ -29,3 +29,6 @@ unwrap volumen/world/map otbm !
 change to Linux UF EOL -> C:\Users\Dex\Desktop\Tibia\TibiaDocker\server  wait-for.sh
 
 sudo rm -R /db
+
+
+docker exec ${CONTAINER_NAME} mysql -u ${USER_NAME} -p${PASSWORD} -e
