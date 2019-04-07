@@ -67,7 +67,7 @@ CREATE TABLE IF NOT EXISTS `accounts` (
 --
 
 INSERT INTO `accounts` (`id`, `name`, `password`, `secret`, `type`, `premdays`, `coins`, `lastday`, `email`, `creation`, `vote`, `key`, `email_new`, `email_new_time`, `rlname`, `location`, `page_access`, `email_code`, `next_email`, `premium_points`, `create_date`, `create_ip`, `last_post`, `flag`, `vip_time`, `guild_points`, `guild_points_stats`) VALUES
-(8, 'god', '21298df8a3277357ee55b01df9530b535cf08ec1', NULL, 5, 0, 0, 0, 'mitsuig@xtibia.com', 1465696163, 0, '', '', 0, '', '', 9999, '', 0, 639, 0, 0, 1467772450, '', 0, 0, 0);
+(8, 'god', '21298df8a3277357ee55b01df9530b535cf08ec1', NULL, 5, 0, 0, 0, 'patsadow2@gmail.com', 1465696163, 0, '', '', 0, '', '', 9999, '', 0, 639, 0, 0, 1467772450, '', 0, 0, 0);
 
 -- --------------------------------------------------------
 

@@ -27,3 +27,5 @@ Information:
 config.lua IP to 127.0.0.1 or your ip !
 unwrap volumen/world/map otbm !
 change to Linux UF EOL -> C:\Users\Dex\Desktop\Tibia\TibiaDocker\server  wait-for.sh
+
+sudo rm -R /db
