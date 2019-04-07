@@ -1,0 +1,34 @@
+version: "3.3"
+
+services:
+  serverots:
+    build:
+      context: ./server
+    ports:
+      - "7171:7171"
+      - "7172:7172"
+    volumes:
+      - ./volume:/srv
+    depends_on:
+      - database
+
+  database:
+    build:
+      context: ./database
+    volumes:
+      - ./db:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: 1234
+    ports:
+      - "3306:3306"
+
+  frontend:
+      build:
+        context: ./frontend
+      volumes:
+        - ./volume:/srv
+      ports:
+        - "8080:80"
+      depends_on:
+        - database
+        - serverots
