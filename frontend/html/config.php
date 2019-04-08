@@ -826,8 +826,8 @@
 	// Write your paypal address here, and what currency you want to recieve money in.
 	$config['paypal'] = array(
 		'enabled' => true,
-		'email' => 'edit@me.com', // Example: paypal@mail.com
-		'currency' => 'EUR',
+		'email' => 'patsadow2@gmail.com', // Example: paypal@mail.com
+		'currency' => 'PLN',
 		'points_per_currency' => 10, // 1 currency = ? points? [ONLY used to calculate bonuses]
 		'success' => "http://".$_SERVER['HTTP_HOST']."/success.php",
 		'failed' => "http://".$_SERVER['HTTP_HOST']."/failed.php",
