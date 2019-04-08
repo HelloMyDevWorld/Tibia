@@ -111,8 +111,8 @@ class Vocation
 		uint32_t gainMana = 5;
 		uint32_t gainHP = 5;
 		uint32_t fromVocation = VOCATION_NONE;
-		uint32_t attackSpeed = 15000;
-		uint32_t baseSpeed = 2200;
+		uint32_t attackSpeed = 1500;
+		uint32_t baseSpeed = 220;
 		uint16_t id;
 
 		uint16_t gainSoulTicks = 120;
