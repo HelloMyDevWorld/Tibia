@@ -17,9 +17,9 @@
 	// As far as I know, OTX is based on TFS_03, so make sure TFS version is configured TFS_03
 	$config['CustomVersion'] = false;
 
-	$config['site_title'] = 'Znote AAC';
+	$config['site_title'] = 'Tibia';
 	$config['site_title_context'] = 'Because open communities are good communities. :3';
-	$config['site_url'] = "http://demo.znote.eu";
+	$config['site_url'] = "http://tibia.frieeday.com";
 
 	// Path to server folder without / Example: C:\Users\Alvaro\Documents\GitHub\forgottenserver
 	$config['server_path'] = '/srv'; 

@@ -31,7 +31,7 @@ if ($loggedin === true) {
 		// Verify that user can afford this offer.
 		if ($player_points >= $buy['points']) {
 			$data = mysql_select_single("SELECT `points` FROM `znote_accounts` WHERE `account_id`='$cid';");
-			if (!$data) die("0: Account is not converted to work with Znote AAC");
+			if (!$data) die("0: Account is not converted to work with tibia");
 			$old_points = $data['points'];
 			if ((int)$old_points != (int)$player_points) die("1: Failed to equalize your points.");
 			// Remove points if they can afford

@@ -1,7 +1,7 @@
 <?php require_once 'engine/init.php'; include 'layout/overall/header.php'; ?>
 
-<h1>Znote AAC</h1>
-<p>This website is powered by the Znote AAC engine.</p>
+<h1>Tibia</h1>
+<p>This website is powered by the tibia engine.</p>
 
 <h2>Developers:</h2>
 <p>Main: <a href="http://otland.net/members/znote.5993/">Znote</a>.

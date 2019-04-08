@@ -144,9 +144,8 @@ if ($config['allowSubPages']) {
 		?>
 		<div style="background-color: white; padding: 20px; width: 100%; float:left;">
 			<h2 style="color: black;">Old layout!</h2>
-			<p style="color: black;">The layout is running an outdated sub system which is not compatible with this version of Znote AAC.</p>
+			<p style="color: black;">The layout is running an outdated sub system which is not compatible with this version of tibia.</p>
 			<p style="color: black;">The file /layout/sub.php is outdated.
-			<br>Please update it to look like <a style="color: orange;" target="_BLANK" href="https://github.com/Znote/ZnoteAAC/blob/master/layout/sub.php">THIS.</a>
 			</p>
 		</div>
 		<?php

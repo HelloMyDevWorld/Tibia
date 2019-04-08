@@ -3,8 +3,8 @@ require '../config.php';
 require '../engine/database/connect.php';
 ?>
 
-<h1>Gesior and Modern shop points to Znote AAC shop points</h1>
-<p>Convert donation/shop points from previous Gesior/Modern installation to Znote AAC:</p>
+<h1>Gesior and Modern shop points to tibia shop points</h1>
+<p>Convert donation/shop points from previous Gesior/Modern installation to tibia:</p>
 <?php
 	$accounts = mysql_select_multi("SELECT `id`, `premium_points` FROM `accounts` WHERE `premium_points`>'0';");
 	$accountids = array();
@@ -16,7 +16,7 @@ require '../engine/database/connect.php';
 
 	$znote_accounts = mysql_select_multi("SELECT `account_id`, `points` FROM `znote_accounts` WHERE `account_id` IN ($accidlist);");
 
-	if (count($accounts) !== count($znote_accounts)) die("<h1><font color='red'>Failed to syncronize accounts. You need to convert all accounts to Znote AAC first!</font></h1>");
+	if (count($accounts) !== count($znote_accounts)) die("<h1><font color='red'>Failed to syncronize accounts. You need to convert all accounts to tibia first!</font></h1>");
 
 	// Order old accounts by id.
 	$idaccounts = array();

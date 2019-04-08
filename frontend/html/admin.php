@@ -154,7 +154,7 @@ if ($basic['version'] !== $version) {
 	mysql_update("UPDATE `znote` SET `version`='$version';");
 	$basic = user_znote_data('version', 'installed', 'cached');
 }
-echo "Running Znote AAC Version: ". $basic['version'] .".<br>";
+echo "Running tibia Version: ". $basic['version'] .".<br>";
 echo "Last cached on: ". getClock($basic['cached'], true) .".<br>";
 ?>
 </p>

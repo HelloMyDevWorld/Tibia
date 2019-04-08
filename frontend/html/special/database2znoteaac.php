@@ -5,8 +5,8 @@ require '../engine/function/general.php';
 require '../engine/function/users.php';
 ?>
 
-<h1>Old database to Znote AAC compatibility converter:</h1>
-<p>Converting accounts and characters to work with Znote AAC:</p>
+<h1>Old database to tibia compatibility converter:</h1>
+<p>Converting accounts and characters to work with tibia:</p>
 <?php
 	// some variables
 	$updated_acc = 0;
@@ -149,5 +149,5 @@ require '../engine/function/users.php';
 	echo 'Updated accounts: '. $updated_acc .'<br>';
 	echo 'Updated characters: : '. $updated_char .'<br>';
 	echo 'Detected:'. $updated_pass .' accounts with plain passwords. These passwords has been given sha1 encryption.<br>';
-	echo '<br>All accounts and characters are compatible with Znote AAC<br>';
+	echo '<br>All accounts and characters are compatible with tibia<br>';
 ?>
