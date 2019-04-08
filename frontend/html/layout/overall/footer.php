@@ -5,9 +5,6 @@
 			</div>
 
 			<footer class="well preventCollapse">
-				<div class="pull-left">
-					<p>&copy; <?php echo $config['site_title'];?>. <?php echo ' Page generated in '. elapsedTime() .' seconds. Q: '.$aacQueries; ?>. Designed By <a href="https://otland.net/members/snavy.155163/" target="_blank">Snavy</a>. Engine: <a href="credits.php">Znote AAC</a>.</p>
-				</div>
 				<div class="pull-right">
 					<p><?php echo 'Server date and clock is: '. getClock(false, true); ?></p>
 				</div>

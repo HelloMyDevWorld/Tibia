@@ -19,7 +19,6 @@
 				<li><a href="onlinelist.php"><i class="fa fa-users"></i> Community</a>
 					<ul>
 						<li><a href="sub.php?page=search">Characters</a> </li>
-						<li><a href="forum.php">Forum</a> </li>
 						<li><a href="guilds.php">Guilds</a> </li>
 						<li><a href="highscores.php">Highscores</a> </li>
 						<li><a href="houses.php">Houses</a> </li>

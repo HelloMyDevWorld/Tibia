@@ -234,12 +234,6 @@
 			</div>
 
 			<footer class="well preventCollapse">
-				<div class="pull-left">
-					Designed By <a href="https://otland.net/members/snavy.155163/" target="_blank">Snavy</a>
-				</div>
-				<div class="pull-right">
-					Github repository : <a href="https://github.com/idontreallywolf/ots_layouts" target="_blank">ots_layouts</a>
-				</div>
 			</footer>
 		</div><!-- Main container END -->
 	</body>
