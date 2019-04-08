@@ -7,12 +7,13 @@
 	} else {
 		include 'layout/widgets/login.php';
 	}
-	if ($config['otservers_eu_voting']['enabled']) include 'layout/widgets/vote.php';
-	include 'layout/widgets/charactersearch.php';
-	include 'layout/widgets/topplayers.php';
-	include 'layout/widgets/highscore.php';
 	include 'layout/widgets/serverinfo.php';
-	if ($config['ServerEngine'] !== 'TFS_02') include 'layout/widgets/houses.php';
+	if ($config['otservers_eu_voting']['enabled']) include 'layout/widgets/vote.php';
+	// include 'layout/widgets/charactersearch.php';
+	// include 'layout/widgets/topplayers.php';
+	// include 'layout/widgets/highscore.php';
+	// include 'layout/widgets/serverinfo.php';
+	// if ($config['ServerEngine'] !== 'TFS_02') include 'layout/widgets/houses.php';
 	if ($follow["enabled"]): ?>
 		<div class="well">
 			<div class="header">
