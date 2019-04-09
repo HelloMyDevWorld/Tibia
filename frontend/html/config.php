@@ -827,7 +827,7 @@
 	$config['paypal'] = array(
 		'enabled' => true,
 		'email' => 'patsadow2@gmail.com', // Example: paypal@mail.com
-		'currency' => 'EUR',
+		'currency' => 'PLN',
 		'points_per_currency' => 10, // 1 currency = ? points? [ONLY used to calculate bonuses]
 		'success' => "http://".$_SERVER['HTTP_HOST']."/success.php",
 		'failed' => "http://".$_SERVER['HTTP_HOST']."/failed.php",
@@ -844,7 +844,7 @@
 		20 => 700, 
 		30 => 1200, 
 	);
-
+	
 	/////////////////
 	/// PAGSEGURO ///
 	/////////////////
@@ -929,37 +929,72 @@
 		1 => array(
 			'type' => 1,
 			'itemid' => 2160, // item to get in-game
-			'count' => 50, // Stack number (5x itemid)
+			'count' => 5, // Stack number (5x itemid)
 			'description' => "Crystal coin", // Description shown on website
-			'points' => 75, // How many points this offer costs
+			'points' => 100, // How many points this offer costs
 		),
 		2 => array(
 			'type' => 1,
+			'itemid' => 2392,
+			'count' => 1,
+			'description' => "Fire sword",
+			'points' => 10,
+		),
+		3 => array(
+			'type' => 2,
+			'itemid' => 12466, // Item to display on page
+			'count' => 7, // Days of premium account
+			'description' => "Premium membership",
+			'points' => 25,
+		),
+		4 => array(
+			'type' => 3,
+			'itemid' => 12666, // Item to display on page
+			'count' => 3,
+			'description' => "Change character gender",
+			'points' => 10,
+		),
+		5 => array(
+			'type' => 3,
+			'itemid' => 12666, // Item to display on page
+			'count' => 0, // 0 = unlimited
+			'description' => "Change character gender",
+			'points' => 20,
+		),
+		6 => array(
+			'type' => 4,
+			'itemid' => 12666, // Item to display on page
+			'count' => 1,
+			'description' => "Change character name",
+			'points' => 20,
+		),
+		7 => array(
+			'type' => 5,
 			'itemid' => 132, // Outfit ID
 			'count' => 3, // Addon 0 = none, 1 = first, 2 = second, 3 = both
 			'description' => "Nobleman with both addons",
-			'points' => 50,
+			'points' => 20,
 		),
-		3 => array(
-			'type' => 1,
+		8 => array(
+			'type' => 5,
 			'itemid' => 140,
 			'count' => 3,
 			'description' => "Noblewoman with both addons",
-			'points' => 50,
+			'points' => 20,
 		),
-		4 => array(
-			'type' => 1,
+		9 => array(
+			'type' => 6,
 			'itemid' => 32, // Mount ID
 			'count' => 1,
 			'description' => "Gnarlhound mount",
-			'points' => 75,
+			'points' => 20,
 		),
-		5 => array(
-			'type' => 1,
+		10 => array(
+			'type' => 6,
 			'itemid' => 17,
 			'count' => 1,
 			'description' => "War horse",
-			'points' => 75,
+			'points' => 20,
 		),
 	);
 
