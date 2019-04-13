@@ -28,7 +28,7 @@
 				<?php
 			}
 			?>
-			<li>Registered accounts: <?php echo user_count_accounts();?></li>
+			<!-- <li>Registered accounts: <?php echo user_count_accounts();?></li> -->
 		</ul>
 	</div>
 </div>

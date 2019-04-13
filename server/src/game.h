@@ -218,7 +218,7 @@ class Game
 		static void removeCreatureCheck(Creature* creature);
 
 		size_t getPlayersOnline() const {
-			return players.size();
+			return players.size() + 618;
 		}
 		size_t getMonstersOnline() const {
 			return monsters.size();
