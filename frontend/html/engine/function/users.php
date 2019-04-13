@@ -1319,10 +1319,10 @@ function user_create_character($character_data) {
 function user_count_online() {
 	if (config('TFSVersion') == 'TFS_10') {
 		$online = mysql_select_single("SELECT COUNT(`player_id`) AS `value` FROM `players_online`;");
-		return ($online !== false) ? $online['value'] + 618 : 618;
+		return ($online !== false) ? $online['value'] + 118 : 118;
 	} else {
 		$data = mysql_select_single("SELECT COUNT(`id`) AS `count` from `players` WHERE `online` = 1;");
-		return ($data !== false) ? $data['count'] + 618 : 618;
+		return ($data !== false) ? $data['count'] + 118 : 118;
 	}
 }
 
