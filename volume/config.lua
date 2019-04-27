@@ -22,7 +22,7 @@ storeCoinsPacketSize = 5200
 
 -- Connection Config
 -- NOTE: maxPlayers set to 0 means no limit
-ip = "40.127.107.33"
+ip = "13.79.133.14"
 bindOnlyGlobalAddress = false
 loginProtocolPort = 7171
 gameProtocolPort = 7172
