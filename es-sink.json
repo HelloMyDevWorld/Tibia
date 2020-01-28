@@ -1,0 +1,19 @@
+{
+    "name": "elastic-sink",
+    "config": {
+        "connector.class": "io.confluent.connect.elasticsearch.ElasticsearchSinkConnector",
+        "tasks.max": "1",
+        "topics": "createdevent",
+        "connection.url": "http://elasticsearch-master:9200",
+        "transforms": "unwrap,key",
+        "transforms.unwrap.type": "io.debezium.transforms.ExtractNewRecordState",
+        "transforms.unwrap.drop.tombstones": "false",
+		"transforms.unwrap.drop.deletes": "false",
+		"transforms.key.type": "org.apache.kafka.connect.transforms.ExtractField$Key",
+		"transforms.key.field": "id",
+		"key.ignore": "true",
+		"schema.ignore": "true",
+		"type.name": "_doc",
+		"behavior.on.null.values": "delete"
+    }
+}

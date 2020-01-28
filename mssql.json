@@ -1,0 +1,19 @@
+{
+    "name": "inventory-connector-mssql",
+    "config": {
+        "connector.class" : "io.debezium.connector.sqlserver.SqlServerConnector",
+        "tasks.max" : "1",
+        "database.server.name" : "server1",
+        "database.hostname" : "mssql-deployment",
+        "database.port" : "1433",
+        "database.user" : "sa",
+        "database.password" : "Pasw0rd!",
+        "database.dbname" : "ihostedb",
+        "database.history.kafka.bootstrap.servers" : "my-cluster-kafka-bootstrap:9092",
+        "database.history.kafka.topic": "schema-changes.inventory",	
+		"transforms": "route",
+		"transforms.route.type": "org.apache.kafka.connect.transforms.RegexRouter",
+		"transforms.route.regex": "([^.]+)\\.([^.]+)\\.([^.]+)",
+		"transforms.route.replacement": "$3"
+    }
+}
